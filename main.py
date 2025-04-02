@@ -16,7 +16,7 @@ class PasswordGeneratorApp(tk.Tk):
         self.dark_mode = tk.BooleanVar(value=False)
         
         tk.Label(self, text="Password Length:", font=("Helvetica", 12), bg=self.light_bg, fg=self.light_fg).pack(pady=(10,5))
-        self.length_scale = tk.Scale(self, from_=1, to=64, orient=tk.HORIZONTAL, length=250, bg=self.light_bg, fg=self.light_fg, highlightbackground=self.light_bg)
+        self.length_scale = tk.Scale(self, from_=1, to=128, orient=tk.HORIZONTAL, length=250, bg=self.light_bg, fg=self.light_fg, highlightbackground=self.light_bg)
         self.length_scale.set(12)
         self.length_scale.pack(pady=5)
 
